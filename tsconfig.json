@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2018",                   
+    "module": "commonjs",
+    "outDir": "build",
+    "rootDir": "src",
+    "strict": true,
+    "moduleResolution": "node",     
+    "baseUrl": "src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@logger": ["./util/logger"],
+      "@config/*": ["./config/*"],
+      "@routes/*": ["./routes/*"],
+      "@helpers/*": ["./helpers/*"],
+      "@interface/*": ["./interface/*"],
+      "@middlewares/*": ["./middlewares/*"],
+      "@controllers/*": ["./controllers/*"],
+      "@server": ["app"]
+    },
+    "esModuleInterop": true,                  
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true  
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}

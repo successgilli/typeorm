@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/mac/Desktop/github/typeorm/logs/.3453bd8e8d5b6c74f084eafedfed22bda598b1db-audit.json",
+    "files": [
+        {
+            "date": 1603431921178,
+            "name": "/Users/mac/Desktop/github/typeorm/logs/application-2020-10-23.log",
+            "hash": "7774f20465862b28543054c43d4897ff"
+        }
+    ]
+}

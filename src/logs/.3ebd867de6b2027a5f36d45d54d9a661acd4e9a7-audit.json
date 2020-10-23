@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/mac/Desktop/github/senseibackend/src/logs/.3ebd867de6b2027a5f36d45d54d9a661acd4e9a7-audit.json",
+    "files": [
+        {
+            "date": 1603223037357,
+            "name": "/Users/mac/Desktop/github/senseibackend/src/logs/application-2020-10-20.log",
+            "hash": "68bf02b91ae48e2b819feb24ad263796"
+        }
+    ]
+}
