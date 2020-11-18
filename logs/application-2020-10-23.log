@@ -2,3 +2,6 @@
 {"message":"Error: /-GET-::1-404-message: PATH / does not exist","level":"info"}
 {"message":"Error: /favicon.ico-GET-::1-404-message: PATH /favicon.ico does not exist","level":"info"}
 {"message":"/api/v1-GET-::1-200-data:{}\n    -message:welcome to sensei","level":"info"}
+{"message":"database error: Wrong driver: \"pg\" given. Supported drivers are: \"cordova\", \"expo\", \"mariadb\", \"mongodb\", \"mssql\", \"mysql\", \"oracle\", \"postgres\", \"sqlite\", \"better-sqlite3\", \"sqljs\", \"react-native\", \"aurora-data-api\", \"aurora-data-api-pg\".","level":"info"}
+{"message":"connecting to database","level":"info"}
+{"message":"listening on port 5000","level":"info"}

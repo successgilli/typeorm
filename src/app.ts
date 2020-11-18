@@ -1,8 +1,10 @@
 import "module-alias/register"
+import "reflect-metadata"
 import express, { Request } from "express"
 import swaggerOptions from "@config/swagger"
 import swaggerUi from 'swagger-ui-express';
 import swaggerJsDoc from 'swagger-jsdoc';
+import { createConnection } from "typeorm"
 
 import "@config/env"
 import { notFoundError } from "@helpers/errors"
@@ -21,7 +23,6 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions(PORT))
 
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 
-
 app.use("/api/v1", routes)
 
 app.all("*", (req: Request ): never => {
@@ -29,6 +30,12 @@ app.all("*", (req: Request ): never => {
 });
 app.use(errorHandler)
 
-app.listen(PORT, () => logger.info(`listening on port ${PORT}`))
+createConnection().then(() => {
+  logger.info(`connecting to database`)
+}).then(() => {
+  app.listen(PORT, () => logger.info(`listening on port ${PORT}`))
+}).catch((error) => {
+  logger.info(`database error: ${error.message}`)
+})
 
 export default app
